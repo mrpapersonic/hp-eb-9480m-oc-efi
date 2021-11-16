@@ -7,7 +7,8 @@ BrcmFirmwareData.kext
 BrcmPatchRAM3.kext
 IntelMausi.kext
 Lilu.kext
-USBInjectAll.kext
+RTCMemoryFixup.kext
+USBMap.kext
 VirtualSMC.kext
 VoodooPS2Controller.kext
 VoodooRMI.kext
