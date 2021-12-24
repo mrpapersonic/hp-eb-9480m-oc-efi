@@ -1,4 +1,3 @@
-ACPIBatteryManager.kext
 AirportBrcmFixup.kext
 AppleALC.kext
 BlueToolFixup.kext
@@ -7,8 +6,7 @@ BrcmFirmwareData.kext
 BrcmPatchRAM3.kext
 IntelMausi.kext
 Lilu.kext
-RTCMemoryFixup.kext
-USBMap.kext
+SMCBatteryManager.kext
 VirtualSMC.kext
 VoodooPS2Controller.kext
 VoodooRMI.kext
