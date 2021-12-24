@@ -14,6 +14,7 @@ A list of kexts to download is provided at `EFI/OC/Kexts/kext-list.txt`, alongsi
 
 <details>
   <summary>More details on USBMapBundle.zip</summary>
+
   `USBMap.kext` is used for Catalina and up, and `USBMapLegacy.kext` is used for Mojave and lower.
   
   To optimize, remove the entry for the kext you don't need in `config.plist` and remove it from the Kexts folder.
