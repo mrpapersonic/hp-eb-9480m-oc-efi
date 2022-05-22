@@ -1,6 +1,10 @@
 # HP EliteBook Folio 9480m OpenCore EFI
 
-Tested with OpenCore 0.7.5 on macOS Big Sur 11.6 and macOS 12.0.1 Monterey (it SHOULD support as low as 10.9 Mavericks, it hasn't been tested though (if you see any bugs let me know!!)).
+Tested with OpenCore 0.7.5 on OS X 10.9 Mavericks through macOS 12.0.1 Monterey.
+
+## Note for El Capitan users
+
+Because El Capitan sucks, you have to use ACPIBatteryManager.kext. I don't know why, and don't really care why; it just needs it for some reason.
 
 ## System configuration
 
