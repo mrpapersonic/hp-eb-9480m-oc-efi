@@ -4,7 +4,7 @@ Tested with OpenCore 0.7.5 on OS X 10.9 Mavericks through macOS 12.0.1 Monterey.
 
 ## Note for El Capitan users
 
-Because El Capitan sucks, you have to use ACPIBatteryManager.kext. I don't know why, and don't really care why; it just needs it for some reason.
+You also need ACPIBatteryManager.kext, El Capitan sucks.
 
 ## System configuration
 
@@ -27,6 +27,4 @@ A list of kexts to download is provided at `EFI/OC/Kexts/kext-list.txt`, alongsi
 </details>
 
 ## CMOS reset notice
-Due to a bug in a recent version of HP's BIOS, the CMOS gets reset every time you restart.
-
-This can be fixed by just updating the BIOS; it rolls back to a 2018 version, and you should be good to go.
+The CMOS intermittently gets reset on some restarts. I haven't bothered to fix this since I don't use macos nearly often enough to care about it. If anyone can figure out whats up with it, be my guest.
