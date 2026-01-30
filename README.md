@@ -1,30 +1,24 @@
 # HP EliteBook Folio 9480m OpenCore EFI
 
-Tested with OpenCore 0.7.5 on OS X 10.9 Mavericks through macOS 12.0.1 Monterey.
+Tested with OpenCore 1.0.6 on Monterey. Your mileage may vary; this config has
+worked with Catalina in the past.
+
+## Setup
+
+You MUST generate new PlatformInfo data; you can use the GenSMBIOS utility for
+this. I recommend identifying as a `MacBookPro11,4` for Monterey support, but
+going for anything older you can use `MacBookAir6,2`.
 
 ## Note for El Capitan users
 
-You also need ACPIBatteryManager.kext, El Capitan sucks.
+You might also need ACPIBatteryManager.kext; it's been a while since I needed
+anything that old for a hackintosh, so you might be able to work without it.
 
 ## System configuration
 
 A stock lowest configuration HP EliteBook Folio 9480m, with a different WiFi card.
 
-I use a DW1560; you may want to choose a card that's natively supported by macOS instead.
-
-## Kexts
-
-A list of kexts to download is provided at `EFI/OC/Kexts/kext-list.txt`, alongside a file named `USBMapBundle.zip`. This zip file contains two kext(s) necessary for USB functionality. Unzip them both, as OpenCore won't boot without both of them (if you really need the extra space, look in the details below).
-
-<details>
-  <summary>More details on USBMapBundle.zip</summary>
-
-  `USBMap.kext` is used for Catalina and up, and `USBMapLegacy.kext` is used for Mojave and lower.
-  
-  To optimize, remove the entry for the kext you don't need in `config.plist` and remove it from the Kexts folder.
-  
-  Congratulations! You now have 4 extra KB of space. Use it wisely, m'kay?
-</details>
-
-## CMOS reset notice
-The CMOS intermittently gets reset on some restarts. I haven't bothered to fix this since I don't use macos nearly often enough to care about it. If anyone can figure out whats up with it, be my guest.
+I use the generic Intel wifi card that came with the computer; yours likely still
+has it installed too. This repo is currently configured to use itlwm.kext + HeliPort.
+You can configure it to use AirportItlwm.kext, but this is not recommended as it is
+less stable and prone to crashes on crappy WiFi connections.
