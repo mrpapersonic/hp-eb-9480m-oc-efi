@@ -16,7 +16,7 @@ anything that old for a hackintosh, so you might be able to work without it.
 
 ## System configuration
 
-A stock lowest configuration HP EliteBook Folio 9480m, with a different WiFi card.
+A stock lowest configuration HP EliteBook Folio 9480m.
 
 I use the generic Intel wifi card that came with the computer; yours likely still
 has it installed too. This repo is currently configured to use itlwm.kext + HeliPort.
